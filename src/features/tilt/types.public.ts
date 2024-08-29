@@ -1,8 +1,8 @@
 export type TiltProps = {
   /**
-   * value to enable/disable tilt effect.
+   * Boolean to enable/disable tilt effect.
    */
-  tiltEnable?: TiltEnable;
+  tiltEnable?: boolean;
   /**
    * Reverse the tilt direction.
    */
@@ -36,5 +36,5 @@ export type TiltProps = {
    */
   tiltAngleYManual?: number | null;
 };
-export type TiltEnable = boolean | { tiltEnable: boolean; options: { savePosition: boolean } };
+
 export type Axis = 'x' | 'y';
